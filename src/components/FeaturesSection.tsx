@@ -5,33 +5,33 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: Brain,
-      title: "Понимает эмоции и контекст",
-      description: "Анализирует настроение клиента и предлагает подходящий тон ответа"
+      title: "Understands emotions and context",
+      description: "Analyzes client mood and suggests the appropriate response tone"
     },
     {
       icon: Target,
-      title: "Знает стадии сделки",
-      description: "Определяет этап воронки продаж и подсказывает следующий шаг"
+      title: "Knows deal stages",
+      description: "Identifies sales funnel stage and suggests the next step"
     },
     {
       icon: MessageCircle,
-      title: "Предлагает ответы в нужном стиле",
-      description: "Дружелюбный, формальный или уверенный — выбирай подходящий тон"
+      title: "Suggests responses in the right style",
+      description: "Friendly, formal, or confident — choose the tone that fits"
     },
     {
       icon: Users,
-      title: "Обучает прямо в моменте",
-      description: "Джуны учатся продавать без наставника, прямо в процессе работы"
+      title: "Teaches in real-time",
+      description: "Juniors learn to sell without a mentor, right in the process"
     },
     {
       icon: TrendingUp,
-      title: "Помогает не терять лидов",
-      description: "Предотвращает потерю клиентов из-за неправильных фраз"
+      title: "Helps avoid losing leads",
+      description: "Prevents client loss due to wrong phrasing"
     },
     {
       icon: Zap,
-      title: "Работает везде",
-      description: "Telegram, WhatsApp, Email, iMessage — встраивается в любой мессенджер"
+      title: "Works everywhere",
+      description: "Telegram, WhatsApp, Email, iMessage — integrates with any messenger"
     }
   ];
 
@@ -40,10 +40,10 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Что делает <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI-T9</span>
+            What <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI-T9</span> Does
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Полный набор инструментов для эффективных продаж в мессенджерах
+            Complete toolkit for effective sales in messengers
           </p>
         </div>
         
@@ -69,7 +69,7 @@ const FeaturesSection = () => {
         {/* Live Dialog Example */}
         <div className="mt-20 bg-white rounded-3xl p-8 shadow-xl max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
-            💡 Пример живого диалога
+            💡 Live Dialog Example
           </h3>
           
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6">
@@ -89,7 +89,7 @@ const FeaturesSection = () => {
                 <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl rounded-tr-none p-4 text-white shadow-lg flex-1 max-w-md">
                   <p>Of course! I'll update the data and have the report ready in 30 minutes. Do you need any specific sections prioritized?</p>
                   <div className="mt-2 text-xs bg-white/20 rounded-lg p-2">
-                    🧠 AI понял срочность, роль и стиль — и ответил идеально
+                    🧠 AI understood urgency, role and style — and responded perfectly
                   </div>
                 </div>
                 <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">

@@ -17,13 +17,13 @@ const CTASection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Присоединяйся к waitlist
+            Join the Waitlist
           </h2>
           <p className="text-xl md:text-2xl text-white/90 mb-4">
-            AI-T9 — не просто AI. Это AI, который помогает продавать.
+            AI-T9 — not just AI. It's AI that helps you sell.
           </p>
           <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto">
-            Будь среди первых, кто получит доступ к революционному инструменту для продаж
+            Be among the first to get access to the revolutionary sales tool
           </p>
           
           {/* CTA Buttons */}
@@ -33,14 +33,14 @@ const CTASection = () => {
               className="bg-white text-gray-900 hover:bg-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-4 group"
             >
               <Play className="mr-3 w-5 h-5 group-hover:scale-110 transition-transform" />
-              Посмотреть демо
+              Watch Demo
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
               className="border-2 border-white text-white hover:bg-white hover:text-gray-900 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-4 group"
             >
-              Записаться в waitlist
+              Join Waitlist
               <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
@@ -49,15 +49,15 @@ const CTASection = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">10x</div>
-              <div className="text-white/80">Быстрее обучение джунов</div>
+              <div className="text-white/80">Faster junior training</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">+40%</div>
-              <div className="text-white/80">Рост конверсии продаж</div>
+              <div className="text-white/80">Sales conversion growth</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">24/7</div>
-              <div className="text-white/80">Поддержка в любое время</div>
+              <div className="text-white/80">Support anytime</div>
             </div>
           </div>
         </div>

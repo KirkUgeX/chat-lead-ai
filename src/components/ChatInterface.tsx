@@ -26,7 +26,7 @@ interface ChatInterfaceProps {
   showTyping?: boolean;
 }
 
-const ChatInterface = ({ messages, aiSuggestion, inputPlaceholder = "Введите сообщение...", showTyping = false }: ChatInterfaceProps) => {
+const ChatInterface = ({ messages, aiSuggestion, inputPlaceholder = "Type a message...", showTyping = false }: ChatInterfaceProps) => {
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-md mx-auto">
       {/* Chat Header */}
@@ -39,7 +39,7 @@ const ChatInterface = ({ messages, aiSuggestion, inputPlaceholder = "Введи�
           </Avatar>
           <div>
             <h3 className="font-semibold text-sm">{messages[0]?.name}</h3>
-            <p className="text-xs opacity-80">онлайн</p>
+            <p className="text-xs opacity-80">online</p>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@ const ChatInterface = ({ messages, aiSuggestion, inputPlaceholder = "Введи�
         {showTyping && (
           <div className="flex items-center space-x-2">
             <Avatar className="w-7 h-7">
-              <AvatarFallback className="bg-gray-300 text-xs">К</AvatarFallback>
+              <AvatarFallback className="bg-gray-300 text-xs">C</AvatarFallback>
             </Avatar>
             <div className="bg-white px-3 py-2 rounded-2xl shadow-sm">
               <div className="flex space-x-1">

@@ -7,19 +7,19 @@ const HowItWorksSection = () => {
     {
       id: "1",
       sender: "client" as const,
-      message: "Мы пока сравниваем. Если что — напишем.",
-      name: "Клиент",
+      message: "We're still comparing options. We'll get back to you if needed.",
+      name: "Client",
     }
   ];
 
   const moment1Suggestion = {
     type: "analysis" as const,
     icon: <Brain className="w-4 h-4" />,
-    title: "AI-T9 подсказывает:",
-    content: "🧠 Похоже, клиент уходит \"подумать\". Это типичное затягивание.",
+    title: "AI-T9 suggests:",
+    content: "🧠 Looks like the client is stalling. This is typical delaying behavior.",
     suggestions: [
-      "✔️ \"Хорошо, зарезервирую условия до завтра. Подойдёт?\"",
-      "✔️ \"Хочешь, пришлю сравнение по фичам — займёт 1 минуту\""
+      "✔️ \"Great, I'll reserve these terms until tomorrow. Sound good?\"",
+      "✔️ \"Want me to send a quick feature comparison? Takes just 1 minute\""
     ]
   };
 
@@ -27,20 +27,20 @@ const HowItWorksSection = () => {
     {
       id: "1",
       sender: "client" as const,
-      message: "Чем вы отличаетесь от конкурентов?",
-      name: "Клиент",
+      message: "How do you differ from your competitors?",
+      name: "Client",
     }
   ];
 
   const moment2Suggestion = {
     type: "responses" as const,
     icon: <MessageSquare className="w-4 h-4" />,
-    title: "AI предлагает варианты:",
-    content: "Выберите подходящий тон ответа:",
+    title: "AI suggests options:",
+    content: "Choose the appropriate tone for your response:",
     suggestions: [
-      "😄 \"Можем показать демку — думаю, сами увидите разницу\"",
-      "📄 \"Отличаемся скоростью внедрения. Могу отправить сравнение\"",
-      "💪 \"Нам доверяют 500+ компаний. Вот в чём мы сильнее...\""
+      "😄 \"We can show you a demo — I think you'll see the difference yourself\"",
+      "📄 \"We excel in implementation speed. I can send you a comparison\"",
+      "💪 \"500+ companies trust us. Here's what makes us stronger...\""
     ]
   };
 
@@ -48,20 +48,20 @@ const HowItWorksSection = () => {
     {
       id: "1",
       sender: "manager" as const,
-      message: "Он не отвечает. Что делать?",
-      name: "Джун",
+      message: "They're not responding. What should I do?",
+      name: "Junior",
     }
   ];
 
   const moment3Suggestion = {
     type: "coaching" as const,
     icon: <Users className="w-4 h-4" />,
-    title: "AI-тренер объясняет:",
-    content: "🎯 Возможно ghosting. Попробуй:",
+    title: "AI coach explains:",
+    content: "🎯 Possible ghosting. Try this:",
     suggestions: [
-      "\"Просто апну, чтобы не потерялось\"",
-      "\"Если неактуально — дай знать\"",
-      "\"У нас появился апдейт, могу показать?\""
+      "\"Just bumping this so it doesn't get lost\"",
+      "\"If this isn't relevant anymore, just let me know\"",
+      "\"We have a new update I could show you?\""
     ]
   };
 
@@ -70,10 +70,10 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Как работает <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI-T9</span>
+            How <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI-T9</span> Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Встроен прямо в чат. Подсказывает, учит, пишет за тебя.
+            Built right into your chats. Suggests, teaches, and writes for you.
           </p>
         </div>
         
@@ -84,11 +84,11 @@ const HowItWorksSection = () => {
               <ChatInterface
                 messages={moment1Messages}
                 aiSuggestion={moment1Suggestion}
-                inputPlaceholder="Введите ответ..."
+                inputPlaceholder="Type your response..."
               />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Момент 1: AI подсказывает сбоку</h3>
-            <p className="text-gray-600">Клиент пишет — AI анализирует и предлагает лучшие варианты ответа</p>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Moment 1: AI suggests from the side</h3>
+            <p className="text-gray-600">Client writes — AI analyzes and suggests the best response options</p>
           </div>
           
           {/* Moment 2 */}
@@ -97,11 +97,11 @@ const HowItWorksSection = () => {
               <ChatInterface
                 messages={moment2Messages}
                 aiSuggestion={moment2Suggestion}
-                inputPlaceholder="Выберите готовый ответ..."
+                inputPlaceholder="Choose a ready response..."
               />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Момент 2: Как T9, только для продаж</h3>
-            <p className="text-gray-600">AI предлагает готовые ответы в разных тонах: дружелюбный, формальный, уверенный</p>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Moment 2: Like T9, but for sales</h3>
+            <p className="text-gray-600">AI offers ready responses in different tones: friendly, formal, confident</p>
           </div>
           
           {/* Moment 3 */}
@@ -110,12 +110,12 @@ const HowItWorksSection = () => {
               <ChatInterface
                 messages={moment3Messages}
                 aiSuggestion={moment3Suggestion}
-                inputPlaceholder="Спросите AI-тренера..."
+                inputPlaceholder="Ask the AI coach..."
                 showTyping={false}
               />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Момент 3: AI как тренер</h3>
-            <p className="text-gray-600">Объясняет поведение клиента и учит, как реагировать в сложных ситуациях</p>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Moment 3: AI as a coach</h3>
+            <p className="text-gray-600">Explains client behavior and teaches how to react in difficult situations</p>
           </div>
         </div>
       </div>
