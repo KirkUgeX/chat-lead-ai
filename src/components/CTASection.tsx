@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import WaitlistForm from "./WaitlistForm";
 
 const CTASection = () => {
   return (
@@ -35,14 +36,18 @@ const CTASection = () => {
               <Play className="mr-3 w-5 h-5 group-hover:scale-110 transition-transform" />
               Watch Demo
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-4 group"
-            >
-              Join Waitlist
-              <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <WaitlistForm
+              trigger={
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-2 border-white text-white hover:bg-white hover:text-gray-900 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-4 group"
+                >
+                  Join Waitlist
+                  <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              }
+            />
           </div>
           
           {/* Stats */}
