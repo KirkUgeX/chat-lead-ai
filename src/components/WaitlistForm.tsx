@@ -39,13 +39,11 @@ const WaitlistForm = ({ trigger }: WaitlistFormProps) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8000/addemailtowl", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      const response = await fetch('/api/api/waitlist2', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }),
+    });
 
       if (response.ok) {
         toast({
