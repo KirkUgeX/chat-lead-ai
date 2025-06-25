@@ -1,4 +1,4 @@
-
+import WaitlistForm from "./WaitlistForm";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle, Zap } from "lucide-react";
 
