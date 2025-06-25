@@ -39,7 +39,7 @@ const WaitlistForm = ({ trigger }: WaitlistFormProps) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://ait9.su/api/api/waitlist2", {
+      const response = await fetch("https://ait9.su/api/api/waitlist2", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
