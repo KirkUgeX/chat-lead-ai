@@ -40,9 +40,17 @@ const HeroSection = () => {
               Watch Demo
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-gray-300 hover:border-purple-500 hover:bg-purple-50 transition-all duration-300">
-              Join Waitlist
-            </Button>
+            <WaitlistForm
+    trigger={
+      <Button
+        size="lg"
+        variant="outline"
+        className="border-2 border-gray-300 hover:border-purple-500 hover:bg-purple-50 transition-all duration-300"
+      >
+        Join Waitlist
+      </Button>
+    }
+  />
           </div>
           
           {/* Features preview */}
